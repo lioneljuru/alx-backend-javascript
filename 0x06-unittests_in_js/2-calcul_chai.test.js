@@ -34,31 +34,31 @@ describe('calculateNumber', () => {
 
   describe('type == "SUBTRACT"', () => {
     it('equal positive numbers', () => {
-      assert.strictEqual(calculateNumber('SUBSTRACT', 2.0, 2.0)).to.equal(0);
+      assert.strictEqual(calculateNumber('SUBTRACT', 2.0, 2.0)).to.equal(0);
     });
 
     it('equal positive numbers (alternate)', () => {
-      assert.strictEqual(calculateNumber('SUBSTRACT', 2.3, 1.8)).to.equal(0);
+      assert.strictEqual(calculateNumber('SUBTRACT', 2.3, 1.8)).to.equal(0);
     });
 
     it('equal negative numbers', () => {
-      assert.strictEqual(calculateNumber('SUBSTRACT', -2.0, -2.0)).to.equal(0);
+      assert.strictEqual(calculateNumber('SUBTRACT', -2.0, -2.0)).to.equal(0);
     });
 
     it('equal neagative numbers (alternate)', () => {
-      assert.strictEqual(calculateNumber('SUBSTRACT', -2.3, -1.8)).to.equal(0);
+      assert.strictEqual(calculateNumber('SUBTRACT', -2.3, -1.8)).to.equal(0);
     });
 
     it('negative and positive numbers', () => {
-      assert.strictEqual(calculateNumber('SUBSTRACT', -2.0, 2.0)).to.equal(-4.0);
+      assert.strictEqual(calculateNumber('SUBTRACT', -2.0, 2.0)).to.equal(-4.0);
     });
 
     it('positive and negative numbers', () => {
-      assert.strictEqual(calculateNumber('SUBSTRACT', 2.0, -2.0)).to.equal(4.0);
+      assert.strictEqual(calculateNumber('SUBTRACT', 2.0, -2.0)).to.equal(4.0);
     });
 
     it('0 and 0', () => {
-      assert.strictEqual(calculateNumber('SUBSTRACT', 0.0, 0.0)).to.equal(0);
+      assert.strictEqual(calculateNumber('SUBTRACT', 0.0, 0.0)).to.equal(0);
     });
   });
 
